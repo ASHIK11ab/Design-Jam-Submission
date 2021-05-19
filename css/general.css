@@ -1,0 +1,147 @@
+:root {
+  --brand-filter-color: invert(52%) sepia(41%) saturate(6802%)
+  hue-rotate(235deg) brightness(90%) contrast(90%);
+  --white-filter-color: invert(78%) sepia(0%) saturate(0%)
+  hue-rotate(29deg) brightness(89%) contrast(85%);
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+/* Outer container which contains brand logo and .nav-continer links */
+.navbar {
+  width: 100vw;
+  margin: -8px;
+  background-color: #000;
+}
+
+/* Nav continer which contains .navbar-nav */
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;  /* Displaying all the elements in one row */
+  align-items: center;
+  padding: .3rem;
+  box-sizing: border-box;
+}
+
+/* Displaying logo and text in same row */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Circle cropping logo */
+.brand-logo img{
+  margin-top: 2px;
+  clip-path: circle(40% at 50% 50%);
+}
+
+/* Styling brand logo text */
+.brand-logo span {
+  color: #fff;
+  margin-top: 6px;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 2px 0px 0px 8px;
+}
+
+/* Displaying all the list items (nav-item-group) in one row */
+.navbar-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+/* Styling the each nav link */
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
+
+.navbar-nav span {
+  font-size: 18px;
+}
+
+/* Changing nav link text color on hover state */
+.navbar-nav span:hover {
+  color: #ddd;
+  cursor: pointer;
+}
+
+/* Contains icon and link text.
+   Displaying nav-item-group in column layout. */
+.nav-item-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Each icon(svg) is filtered to display in #fff color */
+.nav-icon {
+  /* Hiding icons by default */
+  display: none;  
+  filter: var(--white-filter-color);
+}
+
+/* Media query for medium width devices */
+@media (max-width: 700px) {
+  /* Positioning the navbar with links on bottom for
+     better UX on small devices */
+  .navbar-nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    margin-left: 0;
+    background-color: #fff;
+    border-top: .5px solid #ddd;
+    box-sizing: border-box;
+  }
+
+  /* Reducing margins for bottom navbar */
+  .navbar-nav ul {
+    margin: 10px 0px 12px 0px;
+    padding-left: 0;
+  }
+
+  .navbar-nav ul a {
+    margin: 0;
+    color: #aaa;
+  }
+
+  /* Filtering to the brand color on hover state of nav links */
+  .navbar-nav a:hover {
+    filter: var(--brand-filter-color);
+    cursor: pointer;
+  }
+
+  .nav-item-group span {
+    margin-top: 1px;
+  }
+
+  /* Displaying all nav icons on same row */
+  .navbar-nav .nav-icon {
+    display: inline-block;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 450px) {
+  /* Reducing font size for brand text */
+  .brand-logo span {
+    font-size: 1.1rem;
+  }
+}
+
+/* Media Query for extra small devices */
+@media(max-width: 350px) {
+  .navbar-nav span {
+    font-size: 15px;
+  }
+}
