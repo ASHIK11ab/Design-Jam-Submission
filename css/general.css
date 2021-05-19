@@ -101,6 +101,7 @@
     margin-left: 0;
     background-color: #fff;
     border-top: .5px solid #ddd;
+    z-index: 1;
     box-sizing: border-box;
   }
 
