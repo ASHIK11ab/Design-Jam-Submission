@@ -1,0 +1,130 @@
+.container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.hero-section {
+  width: 100vw;
+  margin: -8px;
+  margin-top: 3rem;
+}
+
+.hero-section .container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hero-section .donut {
+  animation: donut-animate .5s linear 2;
+}
+
+.hero-section img {
+  width: 100px;
+  height: 100px;
+  filter: invert(57%) sepia(22%) saturate(6933%)
+   hue-rotate(195deg) brightness(103%) contrast(101%);
+}
+
+.hero-section .hero-content {
+  position: relative;
+  opacity: 0;
+  animation: animate-hero-content 1s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 30px;
+}
+
+.hero-section .emphasis-text {
+  font-size: 18px;
+  color: #a9a1a9;
+  margin-top: -10px;
+  max-width: 300px;
+}
+
+.information-section {
+  margin-top: 2rem;
+}
+
+.information-section .headline {
+  font-size: 23px;
+}
+
+.headline-group .headline-underline {
+  display: block;
+  width: 50px;
+  height: 10px;
+  animation: animate-underline 9s linear infinite;
+  border-radius: 10px;
+  margin-top: -15px;
+}
+
+.info .headline-underline {
+  background-color: #1B9CFC;
+  animation-delay: 3s;
+}
+
+.information-section article {
+  margin-bottom: 2rem;
+}
+
+.information-section article p {
+  font-size: 18px;
+  width: 400px;
+  color: rgb(28, 218, 170);
+  line-height: 22px;
+}
+
+.brand-text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+
+/* All animations */
+@keyframes donut-animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-hero-content {
+  0% {
+    left: -25%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes animate-underline {
+  0% {background-color: #44bd32;}
+  50% {background-color: #ff0000}
+  100% {background-color: #1B9CFC;}
+}
+
+
+@media (max-width: 500px) {
+  .information-section article p {
+    width: 90%;
+  }
+}
