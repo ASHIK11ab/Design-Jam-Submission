@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   position: relative;
   width: 80%;
@@ -141,6 +145,22 @@
   100% {background-color: #1B9CFC;}
 }
 
+@media (min-width: 701px) {
+  #home {
+    border-bottom: 5px solid #6719f7;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    margin-bottom: 4rem;
+  }
+
+  #home {
+    filter: invert(52%) sepia(41%) saturate(6802%)
+  hue-rotate(235deg) brightness(90%) contrast(90%);
+  }
+}
 
 @media (max-width: 600px) {
 
