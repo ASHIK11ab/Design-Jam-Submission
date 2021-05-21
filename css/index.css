@@ -55,11 +55,10 @@
   width: 100vw;
   background-color: #040b21;
   margin: -8px;
-  margin-top: 3rem;
-}
-
-.information-section article {
-  padding: 1rem;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .information-section .headline {
@@ -95,6 +94,20 @@
   font-weight: bold;
 }
 
+.footer {
+  width: 100vw;
+  margin: -8px;
+  margin-top: -16px;
+  height: stretch;
+  background: #ddd;
+}
+
+.footer .container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
 
 /* All animations */
 @keyframes donut-animate {
