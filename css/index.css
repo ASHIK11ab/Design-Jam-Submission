@@ -2,6 +2,7 @@
   position: relative;
   width: 80%;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .hero-section {
@@ -40,7 +41,7 @@
 }
 
 .hero-section .hero-content h1 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .hero-section .emphasis-text {
@@ -51,11 +52,27 @@
 }
 
 .information-section {
-  margin-top: 2rem;
+  width: 100vw;
+  background-color: #040b21;
+  margin: -8px;
+  margin-top: 3rem;
+}
+
+.information-section article {
+  padding: 1rem;
 }
 
 .information-section .headline {
-  font-size: 23px;
+  font-size: 28px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.information-section article p {
+  font-size: 19px;
+  width: 500px;
+  color: rgb(28, 218, 170);
+  line-height: 22px;
 }
 
 .headline-group .headline-underline {
@@ -70,17 +87,6 @@
 .info .headline-underline {
   background-color: #1B9CFC;
   animation-delay: 3s;
-}
-
-.information-section article {
-  margin-bottom: 2rem;
-}
-
-.information-section article p {
-  font-size: 18px;
-  width: 400px;
-  color: rgb(28, 218, 170);
-  line-height: 22px;
 }
 
 .brand-text {
@@ -123,7 +129,11 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+
+  .hero-section .hero-content h1 {
+    font-size: 30px;
+  }
   .information-section article p {
     width: 90%;
   }
