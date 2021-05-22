@@ -46,7 +46,7 @@
   font-size: 1.3rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin: 2px 0px 0px 8px;
+  margin: 0px 0px 0px 8px;
 }
 
 /* Displaying all the list items (nav-item-group) in one row */
@@ -62,6 +62,7 @@
   text-decoration: none;
   letter-spacing: 1px;
   margin-left: 15px;
+  padding: 7px;
 }
 
 .navbar-nav span {
@@ -114,6 +115,7 @@
   .navbar-nav ul a {
     margin: 0;
     color: #aaa;
+    padding: 0;
   }
 
   /* Filtering to the brand color on hover state of nav links */
