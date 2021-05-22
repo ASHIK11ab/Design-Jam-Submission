@@ -11,8 +11,10 @@
 
 /* Outer container which contains brand logo and .nav-continer links */
 .navbar {
-  width: 100vw;
-  margin: -8px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #000;
 }
 
@@ -46,7 +48,6 @@
   font-size: 1.3rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin: 0px 0px 0px 8px;
 }
 
 /* Displaying all the list items (nav-item-group) in one row */
@@ -62,7 +63,7 @@
   text-decoration: none;
   letter-spacing: 1px;
   margin-left: 15px;
-  padding: 7px;
+  padding: 10px;
 }
 
 .navbar-nav span {
@@ -115,7 +116,6 @@
   .navbar-nav ul a {
     margin: 0;
     color: #aaa;
-    padding: 0;
   }
 
   /* Filtering to the brand color on hover state of nav links */
