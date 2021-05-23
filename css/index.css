@@ -51,7 +51,6 @@ html {
 .information-section {
   padding: 1rem 1.5rem;
   margin-top: -1rem;
-  margin-bottom: 2rem;
 }
 
 .information-section .headline {
@@ -67,11 +66,11 @@ html {
 
 .headline-group .headline-underline {
   display: block;
-  width: 50px;
+  width: 70px;
   height: 10px;
   animation: animate-underline 9s linear infinite;
   border-radius: 10px;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 
 .info .headline-underline {
@@ -87,11 +86,11 @@ html {
 
 .footer {
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   background-color:#040b21;
   color: #fff;
+  padding: 1rem;
+  box-sizing:content-box;
+  margin-left: -24px;
   text-align: center;
 }
 
@@ -141,6 +140,10 @@ html {
 
   .information-section article p {
     width: 90%;
+  }
+
+  .footer {
+    margin-bottom: 60px;
   }
 }
 
