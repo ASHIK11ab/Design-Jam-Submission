@@ -16,6 +16,10 @@
   top: 0;
   left: 0;
   background-color: #000;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  box-sizing: border-box;
 }
 
 /* Nav continer which contains .navbar-nav */
@@ -24,7 +28,6 @@
   margin: auto;
   display: flex;  /* Displaying all the elements in one row */
   align-items: center;
-  padding: .3rem;
   box-sizing: border-box;
 }
 
@@ -63,7 +66,7 @@
   text-decoration: none;
   letter-spacing: 1px;
   margin-left: 15px;
-  padding: 10px;
+  padding: 6px 0 3px 0;
 }
 
 .navbar-nav span {
@@ -113,9 +116,15 @@
     padding-left: 0;
   }
 
+  .navbar-nav img {
+    width: 25px;
+    height: 25px;
+  }
+
   .navbar-nav ul a {
     margin: 0;
-    color: #aaa;
+    color: #a3a3a3;
+    padding: 0;
   }
 
   /* Filtering to the brand color on hover state of nav links */
