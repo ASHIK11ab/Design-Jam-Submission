@@ -1,0 +1,106 @@
+body {
+  background-color: #f8f7f7
+}
+
+.container {
+  width: 90vw;
+  margin: 4rem auto;
+}
+
+/* header {
+  display: none;
+} */
+
+.donuts-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.donut {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.donut:hover {
+  cursor: pointer;
+  background-color: #f1ecec;
+  transition: background-color .2s ease-out;
+}
+
+.donut #close-btn {
+  display: none;
+  font-size: 40px;
+  color: #e84118;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  transition: color .2s;
+}
+
+.donut #close-btn:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.donut img {
+  margin-top: -1rem;
+  width: 180px;
+  height: 180px;
+  padding: 1rem;
+}
+
+.donut .donut-name {
+  font-size: 25px;
+  color: blue;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+  display: none;
+}
+
+.donut-content {
+  display: none;
+  position: relative;
+  width: 100%;
+  color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.donut-content p {
+  font-size: 19px;
+  width: 90%;
+  margin: auto;
+}
+
+/* The .full-bg-dark-wrapper is used as a background wrapper
+  to set dark background when a detailed donut card is displayed */
+.full-bg-dark-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .8);
+  display: grid;
+  place-content: center;
+}
+
+#wrapper .donut {
+  width: 400px;
+}
+
+@media (max-width: 500px) {
+  #wrapper .donut {
+    width: 80%;
+    margin: auto;
+  }
+}
