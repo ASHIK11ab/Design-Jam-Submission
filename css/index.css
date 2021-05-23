@@ -5,20 +5,13 @@ html {
 .container {
   position: relative;
   width: 80%;
-  margin: auto;
+  margin: 6rem auto;
   box-sizing: border-box;
 }
 
 .hero-section {
-  width: 100vw;
-  margin: -8px;
-  margin-top: 3rem;
-}
-
-.hero-section .container {
   position: relative;
-  width: 80%;
-  margin: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -56,26 +49,19 @@ html {
 }
 
 .information-section {
-  width: 100vw;
-  background-color: #040b21;
-  margin: -8px;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  padding: 1rem 1.5rem;
+  margin: -1rem 0;
 }
 
 .information-section .headline {
   font-size: 28px;
-  color: #fff;
+  color: #000;
   box-sizing: border-box;
 }
 
 .information-section article p {
-  font-size: 19px;
+  font-size: 19.5px;
   width: 500px;
-  color: rgb(28, 218, 170);
-  line-height: 22px;
 }
 
 .headline-group .headline-underline {
@@ -99,18 +85,10 @@ html {
 }
 
 .footer {
-  width: 100vw;
-  margin: -8px;
-  margin-top: -16px;
-  height: stretch;
-  background: #ddd;
-}
-
-.footer .container{
-  width: 80%;
+  width:100%;
   margin: auto;
+  background-color:blue;
   text-align: center;
-  padding: 10px;
 }
 
 /* All animations */
@@ -160,14 +138,15 @@ html {
     filter: invert(52%) sepia(41%) saturate(6802%)
   hue-rotate(235deg) brightness(90%) contrast(90%);
   }
+
+  .information-section article p {
+    width: 90%;
+  }
 }
 
 @media (max-width: 600px) {
 
   .hero-section .hero-content h1 {
     font-size: 30px;
-  }
-  .information-section article p {
-    width: 90%;
   }
 }
