@@ -94,6 +94,16 @@
   filter: var(--white-filter-color);
 }
 
+.footer {
+  width: 100%;
+  background-color:#040b21;
+  color: #fff;
+  padding: 1rem;
+  box-sizing:content-box;
+  margin-left: -24px;
+  text-align: center;
+}
+
 /* Media query for medium width devices */
 @media (max-width: 700px) {
   /* Positioning the navbar with links on bottom for
@@ -140,6 +150,10 @@
   /* Displaying all nav icons on same row */
   .navbar-nav .nav-icon {
     display: inline-block;
+  }
+
+  .footer {
+    margin-bottom: 60px;
   }
 }
 
