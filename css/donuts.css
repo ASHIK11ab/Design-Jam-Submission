@@ -63,7 +63,7 @@ body {
   color: blue;
   text-transform: uppercase;
   padding-bottom: 1.5rem;
-  display: none;
+  text-align: center;
 }
 
 .donut-content {
