@@ -66,6 +66,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 1.5rem;
   text-align: center;
+  width: 90%;
 }
 
 .donut-content {
@@ -93,8 +94,6 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: grid;
-  place-content: center;
   background-color: rgba(0, 0, 0, .8);
   z-index: 1;
 }
@@ -103,6 +102,8 @@ body {
   cursor: default;
   height: 400px;
   box-sizing: border-box;
+  animation: show_donut_card_from_bottom .5s;
+  animation-fill-mode: forwards;
 }
 
 #wrapper .donut:hover {
@@ -126,6 +127,30 @@ body {
   position: relative;
   height: 100%;
   background-color: #e84118;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper .donut-content p {
+  margin-top: 10px;
+}
+
+@keyframes show_donut_card_from_bottom {
+  0% {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (min-width: 701px) {
@@ -145,7 +170,7 @@ body {
   }
 
   #wrapper .donut {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 }
