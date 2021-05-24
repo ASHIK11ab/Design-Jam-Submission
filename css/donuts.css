@@ -14,9 +14,10 @@ body {
 
 .donuts-container {
   margin-top: 2rem;
+  margin-bottom: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  grid-gap: 2rem;
+  grid-gap: 4rem 3rem;
   padding: 1rem;
   justify-content: center;
 }
@@ -53,10 +54,10 @@ body {
 }
 
 .donut img {
-  margin-top: -1rem;
   width: 180px;
   height: 180px;
   padding: 1rem;
+  margin-top: -1rem;
 }
 
 .donut .donut-name {
@@ -92,18 +93,48 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, .8);
   display: grid;
   place-content: center;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 1;
 }
 
 #wrapper .donut {
-  width: 400px;
+  cursor: default;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+#wrapper .donut:hover {
+  background-color: #fff;
+}
+
+#wrapper .donut img {
+  margin-top: 1rem;
+}
+
+#wrapper .donut-name {
+  margin-top: -2rem;
+}
+
+#wrapper .donut img {
+  width: 280px;
+  height: 280px;
+}
+
+#wrapper .donut-content {
+  position: relative;
+  height: 100%;
+  background-color: #e84118;
 }
 
 @media (min-width: 701px) {
   #donuts {
     border-bottom: 5px solid #6719f7;
+  }
+
+  #wrapper .donut {
+    width: 500px;
   }
 }
 
@@ -112,11 +143,22 @@ body {
     filter: invert(52%) sepia(41%) saturate(6802%)
   hue-rotate(235deg) brightness(90%) contrast(90%);
   }
-}
 
-@media (max-width: 500px) {
   #wrapper .donut {
     width: 80%;
     margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  #wrapper .donut img {
+    width: 50%;
+    height: 50%;
+  } 
+}
+
+@media (max-width: 400px) {
+  #wrapper .donut-name {
+    margin-top: -1.7rem;
   }
 }
