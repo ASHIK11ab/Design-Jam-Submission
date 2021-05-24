@@ -1,0 +1,88 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container section {
+  padding: 1rem;
+  font-size: 18px;
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+input {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  box-sizing: border-box;
+  border: 2.5px solid #ddd;
+  transition: border .4s;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border: 2.5px solid dodgerblue;
+}
+
+sup {
+  color: #ff0000;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+textarea {
+  resize:none;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+  height: 120px;
+  transition: border .4s;
+  margin-bottom: 1rem;
+}
+
+textarea:focus {
+  outline: none;
+  border: 3px solid dodgerblue;
+}
+
+.address-section a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #27d85c;
+  padding: .8rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.phone-information, .mail-information {
+  width: 100%;
+}
+
+.phone-information div, .mail-information div{
+  display: flex;
+  justify-content: space-around;
+}
