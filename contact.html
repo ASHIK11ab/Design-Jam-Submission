@@ -48,7 +48,7 @@
   <!-- End of header -->
   <div class="container">
     <section class="form-section">
-      <h2>Get in touch with us</h2>
+      <h2>Contact us for more information</h2>
       <form action="#" method=post>
         <label for="Name">Name:</label><sup>*</sup>
         <input type="text" name="name" required>
@@ -61,28 +61,30 @@
 
         <label for="Message">Message:</label><sup>*</sup>
         <textarea name="message" maxlength="500" required></textarea>
-        <div class="btn-box">
-          <button>send message</button>
-        </div>
+        <button>Send message</button>
       </form>
     </section>
     <section class="address-section">
-      <h2>Address</h2>
-      <address class="address">
-        No.96 Shaftespury Ave<br>
-        London W1D 5ED<br>
-        United Kingdom<br>
-      </address>
+      <div class="address-information">
+        <h2>Address</h2>
+        <address class="address">
+          No.96 Shaftespury Ave<br>
+          London W1D 5ED<br>
+          United Kingdom<br>
+        </address>
+      </div>
       <!-- End of address -->
       <div class="phone-information">
         <h2>Phone</h2>
-        <div>
-          <p>Ashik Meeran (CEO)</p>
-          <a href="tel+" type="button">Call Now</a>
-        </div>
-        <div>
-          <p>Mohideen (Manager)</p>
-          <a href="tel+" type="button">Call Now</a>
+        <div class="phone-container">
+          <div>
+            <p>Ashik Meeran (CEO)</p>
+            <a href="#" type="button">Call Now</a>
+          </div>
+          <div>
+            <p>Mohideen (Manager)</p>
+            <a href="#" type="button">Call Now</a>
+          </div>
         </div>
       </div>
       <!-- End of phone information -->
@@ -90,7 +92,7 @@
         <h2>Email</h2>
         <div>
           <p>contact@donzo.com</p>
-          <a href="mailto:#" type="button">Send Mail</a>
+          <a href="#" type="button">Send Mail</a>
         </div>
       </div>
     </section>
@@ -101,5 +103,12 @@
     <p>All rights reserved</p>
     <p>Created by Ashik Meeran Mohideen</p>
   </div>
+
+  <script>
+    const contact_icon = document.getElementById('contact');
+    contact_icon.onclick = function() { 
+      window.scrollTo(0, 0);
+    }
+  </script>
 </body>
 </html>

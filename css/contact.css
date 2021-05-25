@@ -2,22 +2,40 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
 .container {
-  width: 90%;
-  margin-top: 6rem;
+  width: 100%;
+  background-color: lightblue;
+  margin-top: 4rem;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .container section {
-  padding: 1rem;
+  padding: 4rem 3rem;
   font-size: 18px;
+  box-sizing: border-box;
+  width: 50vw;
+}
+
+.form-section {
+  background-color: #fff;
+}
+
+.address-section {
+  background-color: #ebe9e9;
 }
 
 form {
-  width: 100%;
+  position: relative;
+  width: 80%;
+  box-sizing: border-box;
 }
 
 label {
@@ -69,20 +87,50 @@ textarea:focus {
   border: 3px solid dodgerblue;
 }
 
+form button {
+  width: 180px;
+  padding: 1rem;
+  border: 0;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #6d33d8;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+.address-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .address-section a {
   text-decoration: none;
   color: #fff;
   background-color: #27d85c;
-  padding: .8rem;
+  padding: 1.1rem;
   border-radius: 8px;
   text-align: center;
 }
 
-.phone-information, .mail-information {
-  width: 100%;
+.phone-container div, .mail-information div{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
 }
 
-.phone-information div, .mail-information div{
-  display: flex;
-  justify-content: space-around;
+.phone-container, .mail-information div {
+  margin-top: -2rem;
+}
+
+.footer {
+  margin-left: 0;
+}
+
+@media (min-width: 701px) {
+  #contact {
+    border-bottom: 5px solid #6719f7;
+  }
 }
