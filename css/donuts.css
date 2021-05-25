@@ -29,6 +29,8 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
+  animation: lazy-load 1.2s;
+  animation-fill-mode: forwards;
   border-radius: 10px;
   box-shadow: -1px 2px 18px 0px #ddd;
   -webkit-box-shadow: -1px 1px 18px 0px #ddd;
