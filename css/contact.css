@@ -32,9 +32,15 @@ body {
 }
 
 form {
-  position: relative;
   width: 80%;
   box-sizing: border-box;
+}
+
+form, .form-section h2 {
+  position: relative;
+  opacity: 0;
+  animation: lazy-load-left 1.2s;
+  animation-fill-mode: forwards;
 }
 
 label {
@@ -105,6 +111,14 @@ form button {
   justify-content: space-around;
 }
 
+.address-information, .phone-information, .email-information {
+  position: relative;
+  opacity: 0;
+  animation: show-from-opacity 1.2s;
+  animation-delay: .6s;
+  animation-fill-mode: forwards;
+}
+
 .form-section h2, .address-section h2 {
   font-size: 28px;
 }
@@ -127,14 +141,14 @@ form button {
   text-align: center;
 }
 
-.phone-container div, .mail-information div{
+.phone-container div, .email-information div{
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
   box-sizing: border-box;
 }
 
-.phone-container, .mail-information div {
+.phone-container, .email-information div {
   margin-top: -2rem;
 }
 
@@ -145,6 +159,22 @@ form button {
 .footer {
   margin-left: 0;
   box-sizing: border-box;
+}
+
+@keyframes lazy-load-left {
+  0% { left: -30% }
+
+  50% { opacity: 1; }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes show-from-opacity {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @media (max-width: 800px) {
