@@ -74,10 +74,11 @@ body {
 }
 
 .information-section {
+  position: relative;
   width: 80%;
   margin: auto;
-  padding: 1rem 1.5rem;
-  position: relative;
+  padding: 1.5rem 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .information-section .headline {
