@@ -136,6 +136,7 @@
     margin: 0;
     color: #a3a3a3;
     padding: 0;
+    user-select: none;
   }
 
   /* Filtering to the brand color on hover state of nav links */
