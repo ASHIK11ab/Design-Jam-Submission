@@ -16,6 +16,15 @@ html {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  background: hsla(320, 100%, 29%, 1);
+
+  background: linear-gradient(135deg, hsla(320, 100%, 29%, 1) 0%, hsla(253, 81%, 56%, 1) 100%);
+  
+  background: -moz-linear-gradient(135deg, hsla(320, 100%, 29%, 1) 0%, hsla(253, 81%, 56%, 1) 100%);
+  
+  background: -webkit-linear-gradient(135deg, hsla(320, 100%, 29%, 1) 0%, hsla(253, 81%, 56%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#920061", endColorstr="#5A32EA", GradientType=1 );
 }
 
 .hero-section .donut {
@@ -39,11 +48,12 @@ html {
 
 .hero-section .hero-content h1 {
   font-size: 35px;
+  color: #fff;
 }
 
 .hero-section .emphasis-text {
   font-size: 18px;
-  color: #a9a1a9;
+  color: #ddd;
   margin-top: -10px;
   max-width: 300px;
 }
