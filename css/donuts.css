@@ -22,7 +22,7 @@ body {
   justify-content: center;
 }
 
-.donut {
+.donuts-container .donut {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,14 @@ body {
   align-items: center;
   background-color: #fff;
   border-radius: 10px;
+  opacity: 0; 
+  animation: lazy-load 1.2s;
+  animation-fill-mode: forwards;
+  box-shadow: -1px 2px 18px 0px #ddd;
+  -webkit-box-shadow: -1px 1px 18px 0px #ddd;
+  -moz-box-shadow: -1px 1px 18px 0px #ddd;
 }
+
 
 .donut:hover {
   cursor: pointer;
@@ -156,6 +163,17 @@ body {
 
 .footer {
   margin-bottom: -8px;
+}
+
+@keyframes lazy-load {
+  0% { left: -30% }
+
+  50% { opacity: 1; }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 @keyframes show_donut_card_from_bottom {
