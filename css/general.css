@@ -99,7 +99,7 @@
   background-color:#040b21;
   color: #fff;
   padding: 1rem;
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin-left: -24px;
   text-align: center;
 }
