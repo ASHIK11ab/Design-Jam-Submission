@@ -138,6 +138,7 @@ form button {
   background-color: #27d85c;
   padding: 1.1rem;
   border-radius: 8px;
+  cursor: pointer;
   text-align: center;
 }
 
