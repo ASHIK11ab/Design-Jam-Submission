@@ -11,6 +11,7 @@ function create_background_wrapper() {
 function show_detailed_donut_card() {
   const wrapper = create_background_wrapper();
   const donut_copy = this.cloneNode(true);
+  donut_copy.classList.remove('original-donut');
   const donut_card_close_btn = donut_copy.querySelector('#close-btn');
   donut_card_close_btn.style.display = 'block';
   const donut_content = donut_copy.querySelector('.donut-content');
