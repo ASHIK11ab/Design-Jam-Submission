@@ -49,8 +49,10 @@
 .brand-logo span {
   color: #fff;
   margin-top: 6px;
-  font-size: 1.3rem;
+  font-size: 23px;
   letter-spacing: 3px;
+  font-weight: bold;
+  margin-left: 8px;
   text-transform: uppercase;
 }
 
@@ -155,21 +157,6 @@
   }
 
   .footer {
-    margin-bottom: 60px;
-  }
-}
-
-/* Media query for mobile devices */
-@media (max-width: 450px) {
-  /* Reducing font size for brand text */
-  .brand-logo span {
-    font-size: 1.1rem;
-  }
-}
-
-/* Media Query for extra small devices */
-@media(max-width: 350px) {
-  .navbar-nav span {
-    font-size: 15px;
+    margin-bottom: 70px;
   }
 }
