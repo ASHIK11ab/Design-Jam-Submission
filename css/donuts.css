@@ -60,9 +60,26 @@ body {
   margin-top: -1rem;
 }
 
+.donut img:hover {
+  animation: rotate-donut 2s linear infinite;
+}
+
+@keyframes rotate-donut {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .donut .donut-name {
   font-size: 25px;
-  color: blue;
+  color: #5f27cd;
+  font-weight: 550;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: .7px;
   text-transform: uppercase;
   padding-bottom: 1.5rem;
   text-align: center;
@@ -137,6 +154,10 @@ body {
   margin-top: 10px;
 }
 
+.footer {
+  margin-bottom: -8px;
+}
+
 @keyframes show_donut_card_from_bottom {
   0% {
     position: absolute;
@@ -172,6 +193,10 @@ body {
   #wrapper .donut {
     width: 90%;
     margin: auto;
+  }
+
+  .footer {
+    margin-bottom: 70px;
   }
 }
 
