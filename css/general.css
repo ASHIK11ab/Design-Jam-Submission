@@ -48,7 +48,7 @@
 /* Styling brand logo text */
 .brand-logo span {
   color: #fff;
-  margin-top: 6px;
+  margin-top: 3px;
   font-size: 23px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -68,12 +68,12 @@
   color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
-  margin-left: 15px;
+  margin-left: 25px;
   padding: 6px 0 3px 0;
 }
 
 .navbar-nav span {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* Changing nav link text color on hover state */
