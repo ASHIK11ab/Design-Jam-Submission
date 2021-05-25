@@ -12,7 +12,6 @@ body {
 
 .container {
   width: 100%;
-  background-color: lightblue;
   margin-top: 3rem;
   display: flex;
 }
@@ -106,6 +105,19 @@ form button {
   justify-content: space-around;
 }
 
+.form-section h2, .address-section h2 {
+  font-size: 28px;
+}
+
+.address-section p, address{
+  font-size: 20px;
+}
+
+.address-section address {
+  font-style: normal;
+  line-height: 30px;
+}
+
 .address-section a {
   text-decoration: none;
   color: #fff;
@@ -119,10 +131,15 @@ form button {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
+  box-sizing: border-box;
 }
 
 .phone-container, .mail-information div {
   margin-top: -2rem;
+}
+
+.mail-information p {
+  word-break:break-all;
 }
 
 .footer {
@@ -133,10 +150,20 @@ form button {
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
+    margin-top: 1rem;
   }
 
   .container section {
     width: 100%;
+  }
+
+  form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .address-section .address-information{
+    margin-top: -2.5rem;
   }
 }
 
