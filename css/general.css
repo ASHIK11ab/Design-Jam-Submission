@@ -57,7 +57,7 @@
 /* Styling brand logo text */
 .brand-logo span {
   color: #fff;
-  margin-top: 0px;
+  margin-top: 2px;
   font-size: 23px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -108,6 +108,8 @@
 
 .footer {
   width: 100%;
+  font-size: 17px;
+  font-family: Helvetica, Arial, sans-serif;
   background-color:#040b21;
   color: #fff;
   padding: 1rem;

@@ -40,7 +40,7 @@ form {
 form, .form-section h1 {
   position: relative;
   opacity: 0;
-  animation: lazy-load-left 1.2s;
+  animation: lazy-load-left .8s;
   animation-fill-mode: forwards;
 }
 
@@ -111,7 +111,7 @@ form button {
 .address-section div {
   position: relative;
   opacity: 0;
-  animation: show-from-opacity 1.2s;
+  animation: show-from-opacity .8s;
   animation-delay: .6s;
   animation-fill-mode: forwards;
 }
@@ -208,7 +208,7 @@ h1 {
 
 @media (min-width: 701px) {
   #contact {
-    border-bottom: 5px solid #6719f7;
+    border-bottom: 5px solid #11e7d5;
   }
 }
 
