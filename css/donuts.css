@@ -5,10 +5,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* 
 body {
   background-color: #f8f7f7
-}
+} */
 
 .container {
   width: 90vw;
@@ -16,12 +16,16 @@ body {
   margin-top: 7rem;
 }
 
+.container h1 {
+  color: #432371;
+}
+
 .donuts-container {
   margin-top: 2rem;
   margin-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  grid-gap: 4rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-gap: 5rem 6rem;
   padding: 1rem;
   justify-content: center;
 }
@@ -77,14 +81,25 @@ body {
 
 .donut .donut-name {
   font-size: 25px;
-  color: #5f27cd;
+  color: #fff;
+  margin-bottom: -20px;
   font-weight: 550;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: .7px;
   text-transform: uppercase;
-  padding-bottom: 1.5rem;
   text-align: center;
-  width: 90%;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background: hsla(159, 100%, 50%, 1);
+
+  background: linear-gradient(45deg, hsla(159, 100%, 50%, 1) 0%, hsla(186, 100%, 50%, 1) 20%, hsla(268, 83%, 47%, 1) 98%, hsla(230, 60%, 43%, 1) 100%);
+  
+  background: -moz-linear-gradient(45deg, hsla(159, 100%, 50%, 1) 0%, hsla(186, 100%, 50%, 1) 20%, hsla(268, 83%, 47%, 1) 98%, hsla(230, 60%, 43%, 1) 100%);
+  
+  background: -webkit-linear-gradient(45deg, hsla(159, 100%, 50%, 1) 0%, hsla(186, 100%, 50%, 1) 20%, hsla(268, 83%, 47%, 1) 98%, hsla(230, 60%, 43%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FFA6", endColorstr="#00E5FF", GradientType=1 );
 }
 
 .donut-content {
@@ -118,13 +133,16 @@ body {
 
 #wrapper .donut {
   cursor: default;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   background-color: #fff;
   border-radius: 9px;
   box-sizing: border-box;
-  animation: show_donut_card_from_bottom .5s;
+  position: absolute;
+  animation: show_donut_card .5s;
   animation-fill-mode: forwards;
 }
 
@@ -132,20 +150,26 @@ body {
   background-color: #fff;
 }
 
+#wrapper #close-btn, #wrapper .donut-content {
+  display: block;
+}
+
 #wrapper .donut img {
-  margin-top: 1rem;
+  padding: 1rem;
+  margin-top: -1rem;
   width: 280px;
   height: 280px;
 }
 
 #wrapper .donut-name {
   margin-top: -2rem;
+  margin-bottom: 0;
 }
 
 #wrapper .donut-content {
   position: relative;
   height: 100%;
-  background-color: #e84118;
+  background-color: #dd3b1f; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,16 +205,14 @@ body {
   }
 }
 
-@keyframes show_donut_card_from_bottom {
+@keyframes show_donut_card {
   0% {
-    position: absolute;
-    bottom: -100%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-150%, -50%);
   }
 
   100% {
-    position: inherit;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
