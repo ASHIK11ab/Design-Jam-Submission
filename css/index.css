@@ -8,21 +8,20 @@ body {
 
 .container {
   position: relative;
-  width: 80%;
+  width: 90%;
+  margin: auto;
   box-sizing: border-box;
 }
 
 .hero-section {
-  font-family: 'Varela', Arial, sans-serif;
-  text-transform: capitalize;
-  width: 100%;
-  min-height: 500px;
+  /* width: 100%; */
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6rem 1rem 1rem 1rem;
-  box-sizing: border-box;
-  background: hsla(320, 100%, 29%, 1);
+  background-image: url('/images/hero-section-background.jpg');
+  background-size: cover;
+  /* background: hsla(320, 100%, 29%, 1);
 
   background: linear-gradient(135deg, hsla(320, 100%, 29%, 1) 0%, hsla(253, 81%, 56%, 1) 100%);
   
@@ -30,54 +29,43 @@ body {
   
   background: -webkit-linear-gradient(135deg, hsla(320, 100%, 29%, 1) 0%, hsla(253, 81%, 56%, 1) 100%);
   
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#920061", endColorstr="#5A32EA", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#920061", endColorstr="#5A32EA", GradientType=1 ); */
 }
 
 .hero-section .hero-container {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap; 
-}
-
-.hero-section .donut {
-  animation: donut-animate .5s linear 2;
-}
-
-.hero-section img {
-  width: 110px;
-  height: 110px;
-  filter: invert(70%) sepia(86%) saturate(5321%)
-    hue-rotate(174deg) brightness(103%) contrast(102%);
+  margin-top: 65px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-section .hero-content {
+  font-family: 'Varela', Arial, sans-serif;
   position: relative;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   opacity: 0;
   animation: animate-hero-content 1s;
-  animation-delay: .5s;
   animation-fill-mode: forwards;
 }
 
 .hero-section .hero-content h1 {
-  font-size: 45px;
-  color: #fff;
+  font-size: 60px;
+  text-transform: capitalize;
+  color: #ec3030;
 }
 
 .hero-section .emphasis-text {
-  font-size: 18px;
-  color: #ddd;
+  font-weight: bold;
+  color: rgb(44, 71, 189);
+  font-size: 22px;
   margin-top: -29px;
-  max-width: 400px;
-}
-
-.information-section {
-  position: relative;
-  width: 80%;
-  margin: auto;
+  max-width: 500px;
 }
 
 .information-section .headline {
@@ -107,6 +95,11 @@ article.info {
   color: #333;
 }
 
+.information-section .headline {
+  position: relative;
+  width: 100%;
+}
+
 .headline-group .headline-underline {
   display: block;
   width: 70px;
@@ -134,22 +127,12 @@ article.info {
 }
 
 /* All animations */
-@keyframes donut-animate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes animate-hero-content {
   0% {
-    left: -25%;
+    left: -40%;
   }
 
-  50% {
+  70% {
     opacity: 1;
   }
 
@@ -177,13 +160,22 @@ article.info {
   hue-rotate(235deg) brightness(90%) contrast(90%);
   }
 
-  .information-section article p {
-    width: 120%;
+  .information-section article {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+
+  .information-section article p{
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (max-width: 650px) {
   .hero-section .hero-content h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
