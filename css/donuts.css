@@ -134,15 +134,12 @@ body {
 
 #wrapper .donut img {
   margin-top: 1rem;
+  width: 280px;
+  height: 280px;
 }
 
 #wrapper .donut-name {
   margin-top: -2rem;
-}
-
-#wrapper .donut img {
-  width: 280px;
-  height: 280px;
 }
 
 #wrapper .donut-content {
