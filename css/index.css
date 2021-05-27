@@ -62,7 +62,7 @@ body {
 
 .hero-section .emphasis-text {
   font-weight: bold;
-  color: rgba(25, 43, 121, .8);
+  color: rgba(69, 82, 138, 0.8);
   font-size: 22px;
   margin-top: -29px;
   max-width: 500px;
@@ -78,26 +78,12 @@ body {
   font-size: 22px;
   text-align: center;
   cursor: pointer;
-  animation: animate-button .8s;
-  animation-delay: 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
 }
 
 .hero-section button:hover {
   background-color: #6D214F;
   color: #fff;
   transition: .4s all ease-out;
-}
-
-@keyframes animate-button {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .information-section .headline {
@@ -130,6 +116,11 @@ article.info {
 .information-section .headline {
   position: relative;
   width: 100%;
+  color: rgb(102, 28, 28);
+}
+
+.headline .brand-text {
+  color: rgb(102, 28, 28);
 }
 
 .headline-group .headline-underline {
@@ -139,6 +130,10 @@ article.info {
   animation: animate-underline 9s linear infinite;
   border-radius: 10px;
   margin-top: -20px;
+}
+
+.about .headline-underline {
+  background-color: #8013e7;;
 }
 
 .info .headline-underline {
@@ -176,8 +171,8 @@ article.info {
 
 @keyframes animate-underline {
   0% {background-color: #44bd32;}
-  50% {background-color: #ff0000}
-  100% {background-color: #1B9CFC;}
+  30% {background-color: #ff0000}
+  60% {background-color: #1B9CFC;}
 }
 
 @media (min-width: 701px) {
@@ -208,6 +203,15 @@ article.info {
 
 @media (max-width: 650px) {
   .hero-section .hero-content h1 {
-    font-size: 50px;
+    font-size: 53px;
+  }
+
+  .hero-section .hero-content p {
+    font-size: 19px;
+  }
+
+  .hero-section button {
+    background-color: #6D214F;
+    color: #fff;
   }
 }
