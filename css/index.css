@@ -78,12 +78,10 @@ body {
   position: relative;
   width: 80%;
   margin: auto;
-  padding: 1.5rem 1.5rem;
-  padding-bottom: 2rem;
 }
 
 .information-section .headline {
-  font-size: 28px;
+  font-size: 32px;
   width: 120%;
   color: #000;
   box-sizing: border-box;
@@ -94,8 +92,17 @@ body {
   font-family: 'Varela', Arial, sans-serif;
 }
 
+article.about {
+  padding-top: 2rem;
+}
+
+article.info {
+  padding-top: .4rem;
+  padding-bottom: 3.8rem;
+}
+
 .information-section article p {
-  font-size: 19.5px;
+  font-size: 22px;
   width: 500px;
   color: #333;
 }
@@ -176,7 +183,6 @@ body {
 }
 
 @media (max-width: 650px) {
-
   .hero-section .hero-content h1 {
     font-size: 40px;
   }
