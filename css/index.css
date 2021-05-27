@@ -71,13 +71,6 @@ body {
   cursor: pointer;
 }
 
-.information-section .headline {
-  font-size: 32px;
-  width: 120%;
-  color: #000;
-  box-sizing: border-box;
-}
-
 .information-section article {
   word-spacing: 2px;
   font-family: 'Varela', Arial, sans-serif;
@@ -92,16 +85,17 @@ article.info {
   padding-bottom: 3.8rem;
 }
 
+.headline {
+  position: relative;
+  font-size: 32px;
+  width: 100%;
+  color: rgb(102, 28, 28);
+}
+
 .information-section article p {
   font-size: 22px;
   width: 500px;
   color: #333;
-}
-
-.information-section .headline {
-  position: relative;
-  width: 100%;
-  color: rgb(102, 28, 28);
 }
 
 .headline .brand-text {
@@ -124,6 +118,28 @@ article.info {
 .info .headline-underline {
   background-color: #1B9CFC;
   animation-delay: 3s;
+}
+
+.checklist-section {
+  font-family: 'Varela', Arial, sans-serif;
+}
+
+.checklist-section .headline-underline {
+  background-color: #e3c303;
+  animation-delay: 1s;
+}
+
+.headline-image-group {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.headline-image-group img{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: -20px;
 }
 
 .brand-text {
