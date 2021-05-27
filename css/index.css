@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('images/hero-section-background.jpg');
+  background-image: url('https://github.com/ASHIK11ab/Design-Jam-Submission/blob/main/images/hero-section-background.jpg');
   background-size: cover;
 }
 
