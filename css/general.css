@@ -11,14 +11,13 @@
 .navbar {
   font-family: 'Varela', Arial, sans-serif;
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #000;
   display: flex;
   align-items: center;
-  padding: .5rem;
   box-sizing: border-box;
   z-index: 1;
   transition: top .6s ease-in-out;
@@ -31,6 +30,7 @@
   display: flex;  /* Displaying all the elements in one row */
   align-items: center;
   box-sizing: border-box;
+  padding: .5rem;
 }
 
 /* Displaying logo and text in same row */
