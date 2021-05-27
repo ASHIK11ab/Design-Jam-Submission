@@ -235,10 +235,6 @@ html {
     width: 90%;
     margin: auto;
   }
-
-  .footer {
-    margin-bottom: 70px;
-  }
 }
 
 @media (max-width: 500px) {

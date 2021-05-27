@@ -126,6 +126,7 @@
     border-top: 1px solid #ddd;
     z-index: 1;
     box-sizing: border-box;
+    transition: bottom .6s ease-in-out;
   }
 
   /* Reducing margins for bottom navbar */
@@ -163,9 +164,5 @@
   /* Displaying all nav icons on same row */
   .navbar-nav .nav-icon {
     display: inline-block;
-  }
-
-  .footer {
-    margin-bottom: 70px;
   }
 }
