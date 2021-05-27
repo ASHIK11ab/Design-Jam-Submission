@@ -13,6 +13,8 @@ body {
 }
 
 .hero-section {
+  font-family: 'Varela', Arial, sans-serif;
+  text-transform: capitalize;
   width: 100%;
   min-height: 500px;
   display: flex;
@@ -82,16 +84,14 @@ body {
 
 .information-section .headline {
   font-size: 28px;
+  width: 120%;
   color: #000;
   box-sizing: border-box;
 }
 
 .information-section article {
   word-spacing: 2px;
-}
-
-.information-section article h1 {
-  width: 120%;
+  font-family: 'Varela', Arial, sans-serif;
 }
 
 .information-section article p {

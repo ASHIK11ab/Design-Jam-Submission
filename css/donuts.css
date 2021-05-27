@@ -1,3 +1,7 @@
+* {
+  font-family: 'Varela', Arial, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }

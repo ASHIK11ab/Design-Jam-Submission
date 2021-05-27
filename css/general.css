@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Varela&display=swap');
+
 :root {
   --brand-filter-color: invert(52%) sepia(41%) saturate(6802%)
   hue-rotate(235deg) brightness(90%) contrast(90%);
@@ -5,12 +7,9 @@
   hue-rotate(29deg) brightness(89%) contrast(85%);
 }
 
-* {
-  font-family: Helvetica, sans-serif;
-}
-
 /* Outer container which contains brand logo and .nav-continer links */
 .navbar {
+  font-family: 'Varela', Arial, sans-serif;
   width: 100%;
   height: 80px;
   position: fixed;
