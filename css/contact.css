@@ -73,10 +73,6 @@ sup {
 }
 
 textarea {
-  resize:none;
-}
-
-textarea {
   width: 100%;
   box-sizing: border-box;
   border: 2px solid #ddd;
@@ -85,6 +81,7 @@ textarea {
   height: 120px;
   transition: border .4s;
   margin-bottom: 1rem;
+  resize:none;
 }
 
 textarea:focus {
@@ -104,14 +101,13 @@ form button {
   font-size: 18px;
 }
 
-
 .address-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.address-information, .phone-information, .email-information {
+.address-section div {
   position: relative;
   opacity: 0;
   animation: show-from-opacity 1.2s;
@@ -119,7 +115,7 @@ form button {
   animation-fill-mode: forwards;
 }
 
-.form-section h2, .address-section h2 {
+h2 {
   font-size: 28px;
 }
 
