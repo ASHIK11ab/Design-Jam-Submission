@@ -57,15 +57,47 @@ body {
 .hero-section .hero-content h1 {
   font-size: 60px;
   text-transform: capitalize;
-  color: #ec3030;
+  color: #7325da;
 }
 
 .hero-section .emphasis-text {
   font-weight: bold;
-  color: rgb(44, 71, 189);
+  color: rgba(25, 43, 121, .8);
   font-size: 22px;
   margin-top: -29px;
   max-width: 500px;
+}
+
+.hero-section button {
+  padding: 1rem 1.2rem;
+  border: 0;
+  border: 4px solid #ec3030;
+  color: #ec3030;
+  border-radius: 10px;
+  outline: none;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  animation: animate-button .8s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.hero-section button:hover {
+  background-color: #ec3030;
+  color: #fff;
+  transition: .4s all ease-out;
+}
+
+@keyframes animate-button {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .information-section .headline {
