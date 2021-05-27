@@ -21,15 +21,6 @@ body {
   justify-content: center;
   background-image: url('/images/hero-section-background.jpg');
   background-size: cover;
-  /* background: hsla(320, 100%, 29%, 1);
-
-  background: linear-gradient(135deg, hsla(320, 100%, 29%, 1) 0%, hsla(253, 81%, 56%, 1) 100%);
-  
-  background: -moz-linear-gradient(135deg, hsla(320, 100%, 29%, 1) 0%, hsla(253, 81%, 56%, 1) 100%);
-  
-  background: -webkit-linear-gradient(135deg, hsla(320, 100%, 29%, 1) 0%, hsla(253, 81%, 56%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#920061", endColorstr="#5A32EA", GradientType=1 ); */
 }
 
 .hero-section .hero-container {
@@ -71,19 +62,13 @@ body {
 .hero-section button {
   padding: 1rem 1.2rem;
   border: 0;
-  border: 4px solid #6D214F;
-  color: #6D214F;
+  background-color: #6D214F;
+  color: #fff;
   border-radius: 10px;
   outline: none;
   font-size: 22px;
   text-align: center;
   cursor: pointer;
-}
-
-.hero-section button:hover {
-  background-color: #6D214F;
-  color: #fff;
-  transition: .4s all ease-out;
 }
 
 .information-section .headline {
@@ -177,7 +162,7 @@ article.info {
 
 @media (min-width: 701px) {
   #home {
-    border-bottom: 5px solid #6719f7;
+    border-bottom: 5px solid #11e7d5;
   }
 }
 
@@ -208,10 +193,5 @@ article.info {
 
   .hero-section .hero-content p {
     font-size: 19px;
-  }
-
-  .hero-section button {
-    background-color: #6D214F;
-    color: #fff;
   }
 }
