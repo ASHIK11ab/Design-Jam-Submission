@@ -39,7 +39,7 @@ body {
 
 .donut:hover {
   cursor: pointer;
-  background-color: #f1ecec;
+  background-color: #eeecec;
   transition: background-color .2s ease-out;
 }
 
@@ -112,13 +112,11 @@ body {
 
 #wrapper .donut {
   cursor: default;
-  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-radius: 9px;
   box-sizing: border-box;
   animation: show_donut_card_from_bottom .5s;
   animation-fill-mode: forwards;
