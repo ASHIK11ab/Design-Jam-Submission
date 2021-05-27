@@ -34,9 +34,10 @@ body {
 form {
   width: 80%;
   box-sizing: border-box;
+  font-size: 22px;
 }
 
-form, .form-section h2 {
+form, .form-section h1 {
   position: relative;
   opacity: 0;
   animation: lazy-load-left 1.2s;
@@ -45,7 +46,7 @@ form, .form-section h2 {
 
 label {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 22px;
   margin-bottom: .5rem;
 }
 
@@ -98,7 +99,7 @@ form button {
   background-color: #6d33d8;
   color: #fff;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .address-section {
@@ -115,12 +116,12 @@ form button {
   animation-fill-mode: forwards;
 }
 
-h2 {
-  font-size: 28px;
+h1 {
+  font-size: 32px;
 }
 
 .address-section p, address{
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .address-section address {
@@ -128,14 +129,21 @@ h2 {
   line-height: 30px;
 }
 
-.address-section a {
-  text-decoration: none;
+.address-section button {
   color: #fff;
-  background-color: #27d85c;
+  background: rgb(37, 180, 180);
+  border: 0;
+  outline: 0;
+  font-size: 20px;
   padding: 1.1rem;
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
+}
+
+.address-section button:hover {
+  transition: background-color .3s;
+  background-color: rgb(49, 139, 139);
 }
 
 .phone-container div, .email-information div{
@@ -150,7 +158,7 @@ h2 {
 }
 
 .mail-information p {
-  word-break:break-all;
+  word-break: break-all;
 }
 
 .footer {
@@ -180,6 +188,10 @@ h2 {
     margin-top: 1rem;
   }
 
+  h1 {
+    margin-top: 3rem;
+  }
+
   .container section {
     width: 100%;
   }
@@ -198,4 +210,8 @@ h2 {
   #contact {
     border-bottom: 5px solid #6719f7;
   }
+}
+
+@media (max-width: 700px) {
+  h2 { margin-top: 2rem; }
 }
